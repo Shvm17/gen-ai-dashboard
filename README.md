@@ -46,18 +46,17 @@ Before running the application, make sure you have the following installed:
    pip install -r requirements.txt
    ```
 
-4. Set up your API keys for Google Gemini and SerpAPI.
-   Google Gemini API: Set your Google Gemini API key by either adding it as an environment variable or directly in the code.
+4. Set up your API keys for Google Gemini: Set your Google Gemini API key by either adding it as an environment variable or directly in the code.
    ```bash
    export GOOGLE_API="your-google-gemini-api-key"
    ```
    
-  SerpAPI: Obtain your SerpAPI key by signing up at SerpAPI. After you get your key, set it in the code.
+5. Set up your API keys for SerpAPI: Obtain your SerpAPI key by signing up at SerpAPI. After you get your key, set it in the code.
   ```bash
   api_key = "your-serpapi-api-key"
   ```
 
-5. Running the App
+6. Running the App
    Start the Streamlit app:
   ```bash
   streamlit run app.py
