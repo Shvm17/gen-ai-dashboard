@@ -2,8 +2,7 @@
 
 ## Project Summary
 
-Gen-AI Dashboard is an AI-powered web application that utilizes the Google Gemini API to process data and extract relevant information from uploaded CSV files. The dashboard allows users to upload CSV files containing entities, perform web searches to gather relevant data, and use generative AI models to extract key information. The application also provides a real-time clock and allows users to filter and visualize extracted results.
-
+Gen-AI Dashboard is an AI-powered web application that utilizes the Google Gemini API to process data and extract relevant information from uploaded CSV files. The dashboard allows users to upload CSV files containing entities, perform web searches to gather relevant data, and use generative AI models to extract key information. 
 ## Features
 
 - Upload CSV files with entities for processing.
