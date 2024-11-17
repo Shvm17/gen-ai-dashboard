@@ -31,7 +31,7 @@ Before running the application, make sure you have the following installed:
 1. Clone this repository:
 
    ```bash
-   git clone https://github.com/your-username/gen-ai-dashboard.git
+   git clone https://github.com/Shvm17/gen-ai-dashboard.git
    ```
 
 2. Navigate to the project directory:
