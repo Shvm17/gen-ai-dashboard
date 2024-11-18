@@ -50,12 +50,11 @@ Before running the application, make sure you have the following installed:
    SERP_API = "your-serpapi-api-key"
    
    ```
-   
-5. Running the App: Start the Streamlit app.
+5. Running the App: Start the Streamlit app.:
 
-  ```bash
-  streamlit run app.py
-  ``` 
+   ```bash
+   streamlit run app.py
+   ```   
 
 ## Usage Guide
 - Upload your CSV file containing entities.
@@ -73,4 +72,5 @@ Before running the application, make sure you have the following installed:
 ## Acknowledgments
 Special thanks to the contributors of the open-source libraries used in this project.
 
-
+## Demo of the Project
+[Watch my video explaination](https://drive.google.com/file/d/1SdiB1zUp7Lnq46ba4SLQwmSDwaRhyYeX/view?usp=sharing)
