@@ -5,6 +5,10 @@ import os
 import google.generativeai as genai  
 from datetime import datetime
 import time
+from dotenv import load_dotenv
+
+load_dotenv()
+
 
 # Configuring the Google Gemini API with your API key
 genai.configure(api_key=os.getenv("GOOGLE_API"))
@@ -49,7 +53,7 @@ if uploaded_file:
 
     # This Function will be used to perform a web search using a search API (SerpAPI)
     def perform_search(query):
-        api_key = "fae6c4cb56997653757d8736b14003d0dab6f4871db66262adfe45a0c20dd26e"  # Replace with your actual SerpAPI key
+        api_key = os.getenv("SERP_API")  # Replace with your actual SerpAPI key
         url = f"https://serpapi.com/search?q={query}&api_key={api_key}"
         response = requests.get(url)
         if response.status_code == 200:
@@ -80,7 +84,6 @@ if uploaded_file:
         st.dataframe(extracted_data_df)
         st.download_button("Download CSV", extracted_data_df.to_csv(index=False), "results.csv")
 
-    
 
     search_term = st.text_input("Search in extracted data:")
     if search_term:
