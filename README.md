@@ -8,7 +8,6 @@ Gen-AI Dashboard is an AI-powered web application that utilizes the Google Gemin
 - Upload CSV files with entities for processing.
 - Customizable prompt template for querying data.
 - Use of the Google Gemini API to generate meaningful content from search results.
-- Real-time clock display.
 - Filter extracted data based on search terms.
 - Option to download processed results as a CSV file.
 - Interactive user interface built with Streamlit.
@@ -19,7 +18,7 @@ Gen-AI Dashboard is an AI-powered web application that utilizes the Google Gemin
 
 Before running the application, make sure you have the following installed:
 
-- Python 3.8 or higher
+- Python 3.9 or higher
 - Streamlit
 - Pandas
 - Requests
@@ -44,22 +43,19 @@ Before running the application, make sure you have the following installed:
    ```bash
    pip install -r requirements.txt
    ```
+4. Create a .env file in the root directory with your API keys::
 
-4. Set up your API keys for Google Gemini: Set your Google Gemini API key by either adding it as an environment variable or directly in the code.
    ```bash
-   export GOOGLE_API="your-google-gemini-api-key"
+   GOOGLE_API="your-google-gemini-api-key"
+   SERP_API = "your-serpapi-api-key"
+   
    ```
    
-5. Set up your API keys for SerpAPI: Obtain your SerpAPI key by signing up at SerpAPI. After you get your key, set it in the code.
-  ```bash
-  api_key = "your-serpapi-api-key"
-  ```
+5. Running the App: Start the Streamlit app.
 
-6. Running the App
-   Start the Streamlit app:
   ```bash
   streamlit run app.py
-  ```
+  ``` 
 
 ## Usage Guide
 - Upload your CSV file containing entities.
@@ -73,6 +69,8 @@ Before running the application, make sure you have the following installed:
 - SerpAPI: A search engine API used to gather search results from the web based on the entity and prompt provided.
 - Streamlit: A Python library used to create interactive web applications for data processing and visualization.
 - Pandas: A Python data analysis library for handling and processing data in CSV format.
-  
+
+## Acknowledgments
+Special thanks to the contributors of the open-source libraries used in this project.
 
 
